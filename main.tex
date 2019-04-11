@@ -1,0 +1,82 @@
+\documentclass[report,12pt,openright,oneside,a4paper,brazil]{abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{leading}
+\usepackage{amsmath,esint}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{indentfirst}
+\usepackage[newfloat]{minted}
+
+\renewcommand{\ABNTEXchapterfont}{\fontfamily{cmr}\fontseries{b}\selectfont}
+%%\renewcommand{\ABNTEXchapterfontsize}{\LARGE}
+
+\titulo{Título}
+\autor{
+    \makebox[.6\textwidth]{
+    	Autor A \hfill 
+        RA:	00000000}\\
+	\makebox[.6\textwidth]{
+    	Autor B \hfill
+        RA: 11111111}\\
+	\makebox[.6\textwidth]{
+    	Autor C \hfill 
+        RA: 22222222}\\
+	\makebox[.6\textwidth]{
+    	Autor D \hfill 
+        RA: 33333333}}
+\instituicao{Universidade Federal do ABC}
+\local{Santo André}
+\tipotrabalho{Relatório}
+\orientador{Professor\\}
+\date{Data}
+
+\renewcommand{\imprimircapa}{%
+\begin{capa}%
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.6]{logo.jpg}
+		\label{fig:logo}
+	\end{figure}
+	\begin{center}
+		\textbf{\large Disciplina - BC1419}
+		\vfill
+    	{\LARGE\textbf{\imprimirtitulo}}
+    	\vfill
+    	Docente: \imprimirorientador
+    	\vspace*{1cm}
+		\imprimirautor
+		\vfill
+    	\imprimirlocal \\
+    	\imprimirdata
+	\end{center}
+\end{capa}
+}
+
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+
+\begin{document}
+\imprimircapa
+
+\pagenumbering{arabic}
+
+\chapter{Questão 1}
+
+\chapter{Questão 2}
+
+\chapter{Questão 3}
+
+\chapter{Questão 4}
+
+\chapter{Questão 5}
+
+\end{document}
