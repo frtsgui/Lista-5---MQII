@@ -70,7 +70,17 @@
 
 \chapter{Questão 1}
 
-$\braket{\psi}{\psi}$
+\begin{equation}
+    P_{i \rightarrow f} = \frac{1}{\hbar^2}\qty|\int_0^t H_{fi} e^{i\omega_{fi}t'}\:dt'|^2
+\end{equation}
+com $H_{fi}=\mel{\phi_f}{H_1(t)}{\phi_i}$ e $\omega_{fi}=(E^0_f-E^0_i)/\hbar$. Tem-se $H_1(t)=V_0 \cos(\omega t)$. Daí
+$$P_{i \rightarrow f} = \frac{1}{\hbar^2}\qty|\int_0^t \mel{\phi_f}{V_0 \cos(\omega t)}{\phi_i} e^{i\omega_{fi}t'}\:dt'|^2= \frac{1}{\hbar^2}\qty|\int_0^t V_{fi} \cos(\omega t) e^{i\omega_{fi}t'}\:dt'|^2$$
+com $V_{fi}=\mel{\phi_f}{V_0}{\phi_i}$. Assim
+$$P_{i \rightarrow f} = \frac{|V_{fi}|^2}{\hbar^2}\qty|\int_0^t \frac{e^{i\omega t}+e^{-i\omega t}}{2} e^{i\omega_{fi}t'}\:dt'|^2 = \frac{|V_{fi}|^2}{\hbar^2}\qty|\int_0^t \frac{e^{i(\omega_{fi}+\omega) t}+e^{i(\omega_{fi}-\omega )t}}{2}\:dt'|^2$$
+$$P_{i \rightarrow f} = \frac{|V_{fi}|^2}{\hbar^2}\qty|\frac{1}{2}\int_0^t e^{i(\omega_{fi}+\omega) t}+e^{i(\omega_{fi}-\omega )t}\:dt'|^2$$
+$$P_{i \rightarrow f} = \frac{|V_{fi}|^2}{\hbar^2}\qty|\frac{1}{2} \qty[\frac{e^{i(\omega_{fi}+\omega) t}}{i(\omega_{fi}+\omega)}+\frac{e^{i(\omega_{fi}-\omega )t}}{i(\omega_{fi}-\omega )}]|^2$$
+
+
 
 \chapter{Questão 2}
 
